@@ -1,0 +1,4 @@
+.title-name{
+    position: absolute;
+    left: calc(57% - calc(1.375rem + 1.5vw) );
+}
