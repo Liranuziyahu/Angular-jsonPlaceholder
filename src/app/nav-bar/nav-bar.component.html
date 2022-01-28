@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+
+  <title>Document</title>
+</head>
+<body>
+
+  <header>
+    <!-- <img class="logo" src="../../../img/logo2.jpg" alt="Logo" > -->
+    <nav>
+      <ul class = "nav__link">
+        <li> <a routerLink="/" (click)="titleName('Home')">Home</a></li>
+        <li> <a routerLink="/users" (click)="titleName('User')">User</a></li>
+        <li> <a routerLink="/posts" (click)="titleName('Post')">Post</a></li>
+        <div class="dot"></div>
+      </ul>
+    </nav>
+    <a><button>{{title_page}}</button></a>
+  </header>
+
+
+</body>
+</html>

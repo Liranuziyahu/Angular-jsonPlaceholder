@@ -1,0 +1,26 @@
+.idUser{
+    background-color: black;
+    color: aliceblue;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    font-size:16px;
+    font-weight: 500;
+}
+.warp-post{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: center;
+    justify-content: space-around;
+}
+.card{
+    height:100%;
+}
+.btn-primary
+{
+  position: fixed;
+  top: 13vh;
+  right: 1px;
+}

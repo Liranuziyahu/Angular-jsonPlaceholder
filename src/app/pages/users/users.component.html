@@ -1,0 +1,70 @@
+<div class="warp-users">
+  <div *ngFor="let user of users" >
+    <div class="card" style="width: 18rem;text-align:center" > 
+      <div class="idUser">{{user.id}}</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/No_Pic.jpg" width="20" height="90" class="card-img-top" alt="...">
+        <div class="card-body"> 
+          <h5 class="card-title">{{user.nameUser}}</h5>
+          <p class="card-text">
+            <br>
+            Name: {{user.name}}<br>
+            Addrass: {{user.address.city}} <br>
+            Email: {{user.email}}<br>
+            Phone: {{user.phone}}<br><br>
+          </p>
+        </div> 
+        <ul class="list-group list-group-flush"> 
+          <li class="list-group-item">
+            <b>Company:</b>
+            <br> 
+            {{user.company.name}}
+            <br> 
+            {{user.company.bs}}
+            <br>
+            {{user.company.catchPhrase}}
+            <br>
+          </li> 
+          <li class="list-group-item"id="groupOne">
+            <b>Website:</b>
+            <br>
+            {{user.website}}
+          </li> 
+        </ul>
+        <div class="card-body"> 
+        <a href="#" class="card-link" >Card Link<i class="fab fa-linkedin"></i></a>
+        </div> 
+    </div>
+  </div> 
+</div>
+
+
+
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+Add new user</button>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">New User</h5>
+  </div>
+    
+  <form #ngForm=ngForm (ngSubmit)="addUser()">
+    <div>
+      <label for="fullName">Name:</label>
+      <input ngModel type="text" name="fullName" id="fullName" required>
+    </div>
+    <div>
+      <label for="addrass">Addrass:</label>
+      <input ngModel type="text" name="addrass" id="addrass" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input ngModel type="email" name="email" id="email" pattern=".+@globex\.com" required>
+    </div>
+    <div>
+      <label for="phone">Phone:</label>
+      <input ngModel type="text" name="phone" id="phone" required>
+    </div>
+    <button>SEND</button>
+  </form>
+
+</div>

@@ -1,0 +1,53 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+  .warp-users{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    
+  }
+  .card-text{
+    display: inline-block;
+    margin-top: -20px;
+    }
+  .idUser{
+    background-color: black;
+    color: aliceblue;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    font-size:16px;
+    font-weight: 500;
+
+  }
+  .card{
+    font-size:12px;
+    margin-top:20px;
+    margin-bottom: 50px;
+  }
+  .list-group-item{
+    background:#1669bb;
+    display:inline-block;
+    margin-top:-10px;
+  }
+  .card-img-top{
+    display:inline-block;
+    margin-top: -20px;
+    width: 90px;
+    height:90px;
+    margin-left: calc(50% - 45px);
+  }
+  .btn-primary
+  {
+    position: fixed;
+    top: 13vh;
+    right: 1px;
+  }

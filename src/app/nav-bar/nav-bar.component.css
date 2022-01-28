@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    background-color:#24252A;
+}
+li , a , button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color:#edf0f1;
+    text-decoration:none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    height:13vh;
+}
+.logo{
+    margin-right: auto;
+    }
+.nav__link{
+  list-style: none;  
+}
+.nav__link li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__link li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__link li a:hover{
+    color: #0088a9;
+}
+button{
+margin-left: 20px;
+padding: 9px 25px;
+background-color: rgba(0,136,169,1);
+border: none;
+border-radius: 50px;
+cursor:pointer;
+transition: all 0.3s ease 0s;
+}
+button:hover
+{
+   background-color: rgba(0,136,169,0.8);
+}
+.dot{
+    width: 6px;
+    height: 6px;
+    background: rgba(0,136,169,1);
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(38px);
+    transform: translateX(38px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.nav__link li:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(45px);
+    transform: translateX(45px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .nav__link li:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(125px);
+    transform: translateX(125px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .nav__link li:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(205px);
+    transform: translateX(205px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  .nav__link li:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(285px);
+    transform: translateX(285px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }

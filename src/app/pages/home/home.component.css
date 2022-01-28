@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Work+Sans:ital,wght@0,300;1,200&display=swap');body{
+    overflow-y:hidden;
+
+    background-color:#24252A;
+}
+.warp-title{
+    width:100vw;
+    height:100vh;
+}
+.title_project{
+font-family: 'Work Sans', sans-serif;
+margin-top:60px;
+text-align:center;
+font-size:90px;
+color:#edf0f1;
+text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c, 40px 40px 14px rgba(237,240,241,0.31);
+}

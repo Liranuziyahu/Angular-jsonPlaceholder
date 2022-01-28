@@ -1,0 +1,44 @@
+<div class="warp-post">
+    <section *ngFor="let post of arrposts">
+        <div class="card" style="width: 18rem;text-align:center" > 
+            <div class="idUser">{{post.id}}</div>
+              <div class="card-body"> 
+                <h5 class="card-title">{{post.userId}}</h5>
+                <p class="card-text">
+                  <br>
+                 <h5>{{post.title}}</h5><br>
+                  Body: {{post.body}}<br>
+              </div> 
+        </div>   
+    </section>
+</div>
+
+<!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">New User</h5>
+  </div>
+    
+  <form #ngForm=ngForm (ngSubmit)="addUser()">
+    <div>
+      <label for="fullName">Name:</label>
+      <input ngModel type="text" name="fullName" id="fullName" required>
+    </div>
+    <div>
+      <label for="addrass">Addrass:</label>
+      <input ngModel type="text" name="addrass" id="addrass" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input ngModel type="email" name="email" id="email" pattern=".+@globex\.com" required>
+    </div>
+    <div>
+      <label for="phone">Phone:</label>
+      <input ngModel type="text" name="phone" id="phone" required>
+    </div>
+    <button>SEND</button>
+  </form>
+
+</div> -->
+
+
+
